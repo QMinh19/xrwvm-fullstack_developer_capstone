@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <!-- Link to CSS Stylesheets (Bootstrap and Custom Styles) -->
+    <link rel="stylesheet" href="/static/style.css">  <!-- Assuming your custom styles are in /static/style.css -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css"> <!-- Bootstrap CSS -->
+
+    <style>
+        /* Custom CSS for the contact page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+
+        .contact-info {
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 70%;
+        }
+
+        .contact-info h2 {
+            color: #17a2b8;
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .address,
+        .contact-info .phone,
+        .contact-info .email {
+            font-weight: bold;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #17a2b8;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact">Contact Us</a> <!-- Active link for Contact Us -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, feel free to reach out to us. We are happy to help you!</p>
+
+        <p class="address">Address: 123 Best Cars Ave, Car City, AutoLand</p>
+        <p class="phone">Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p class="email">Email: <a href="mailto:info@bestcars.com">info@bestcars.com</a></p>
+    </div>
+
+    <!-- Link to Bootstrap JS for functionality (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
