@@ -25,9 +25,7 @@ class CarModel(models.Model):
         (SUV, 'SUV'),
         (WAGON, 'Wagon'),
     ]
-    
-    car_make = models.ForeignKey(CarMake, related_name='models', on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)  # Add name field
     type = models.CharField(max_length=3, choices=CAR_TYPE_CHOICES)
     year = models.IntegerField(
         validators=[MinValueValidator(2015), MaxValueValidator(2023)]
@@ -35,4 +33,4 @@ class CarModel(models.Model):
     description = models.TextField(blank=True)
 
     def __str__(self):
-        return f'{self.name} ({self.year})'
+        return self.name
